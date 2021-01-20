@@ -6,30 +6,30 @@ let counter=0;
 
 console.log(chosenNumber);
 chosenNumber = Math.floor(Math.random()*2) + 0 ;
-if (chosenNumber=1) {
+if (chosenNumber==1) {
     counter++;
 }
 console.log(chosenNumber);
 chosenNumber = Math.floor(Math.random()*2) + 0 ;
-if (chosenNumber=1) {
+if (chosenNumber==1) {
     counter++;
 }
 console.log(chosenNumber);
 chosenNumber = Math.floor(Math.random()*2) + 0 ;
-if (chosenNumber=1) {
+if (chosenNumber==1) {
     counter++;
 }
 console.log(chosenNumber);
 chosenNumber = Math.floor(Math.random()*2) + 0 ;
-if (chosenNumber=1) {
+if (chosenNumber==1) {
     counter++;
 }
 console.log(chosenNumber);
 chosenNumber = Math.floor(Math.random()*2) + 0 ;
-if (chosenNumber=1) {
+if (chosenNumber==1) {
     counter++;
 }
-if (counter=5) {
+if (counter==5) {
     console.log("You won a jackpot, your winning probability was " + 2**5)
 } else if(counter=0) {
     console.log("You got fice zeros which is hard")
