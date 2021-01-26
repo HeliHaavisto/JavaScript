@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary counter</title>
+</head>
+<body>
+    <p>Salary Calculator</p>
+
+    <form >
+        <div>
+            <label for="salary">Your hourly salary</label>
+            <input type="text"  id="salary"/>
+
+        </div>
+        <div>
+            <label for="hours">Your worked hours</label>
+            <input type="text"  id="hours"/>
+
+        </div>
+        
+    </form>
+
+    <button onclick="calculate()">Run</button>
+
+    <p>Your daily salary: <span id="answer"></span></p>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
