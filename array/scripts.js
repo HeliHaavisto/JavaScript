@@ -6,7 +6,7 @@ while (true) {
 
     for (let i = 0; i < 5; i++) {
 
-        let luku = Math.floor(Math.random() * 2);
+        let luku = Math.floor(Math.random() * 6);
         lista.push(luku);
 
     }

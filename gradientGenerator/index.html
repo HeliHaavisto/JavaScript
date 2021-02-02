@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <div>
+    <h1>Generate custom gradient backgound is easy:</h1>
+    </div>
+    
+        <h2>At first, choose the direction</h2>
+
+        <form action="">
+            <div>
+                <!-- huom, nimi pytyy samana, joten niistä tulee ryhmä -->
+            <input checked type=radio name="direction"  id="ltr" value="to right"/>
+            <label for="ltr">Left to Right</label>
+
+            <input type=radio name="direction"  id="rtl" value="to left"/>
+            <label for="rtl">Right to left</label>
+
+            <input type=radio name="direction" id="ttb" value="to bottom"/>
+            <label for="ttb">Top to bottom</label>
+
+            <input type=radio name="direction" id="btt" value="to top"/>
+            <label for="btt">Bottom to top</label>
+
+        
+
+
+            </div>
+    <div>
+        <h2>Second, choose colors:</h2>
+
+        <input type="color"  id="color1" value= "#b8197e"/>
+        <label for="color1"></label>
+
+        <input type="color"  id="color2" value="#888a19"/>
+        <label for="color2"></label>
+
+    </div>
+    <div>
+        <h2>Third, generate your gradient:</h2>
+
+        <button type="submit" id="generate">Generate</button>
+        <label for="generate"></label>
+
+    </div>
+</form>
+    <div>
+
+        <h2>Finally, copy your CSS code:</h2>
+       <p></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

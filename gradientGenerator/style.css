@@ -1,0 +1,26 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #b8197e, #888a19);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+div {
+  margin-bottom: 50px;
+}
+
+input {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+button {
+  background: #333;
+  display: block;
+  margin: 50px auto;
+  padding: 16px;
+  color: white;
+  border: none;
+}
