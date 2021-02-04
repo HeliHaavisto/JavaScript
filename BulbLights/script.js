@@ -58,12 +58,15 @@ document.getElementById('start-btn').addEventListener('click', () => {
         if (counter == CHOSEN_BULB_INDEX) {
 
             text.textContent = ("you won");
+            setTimeout(() => { location.reload() }, 1000);
 
         } else {
 
             text.textContent = ("no win");
+            setTimeout(() => { location.reload() }, 1000);
 
         }
+
 
     })
 
@@ -85,5 +88,7 @@ document.getElementById('start-btn').addEventListener('click', () => {
 
     // invoke the fn on the class bulb elements to create the effect
     arrangeBulbsInACircle(document.getElementsByClassName('bulb'));
+
+
 
 })
