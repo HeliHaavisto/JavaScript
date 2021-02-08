@@ -14,6 +14,8 @@ document.getElementById('start-btn').addEventListener('click', () => {
     BLINKING_SPEED = document.getElementById('interval').value;
     NUMBER_OF_BULBS = document.getElementById('bulbCount').value;
 
+    let button = document.getElementById('start-btn');
+    button.disabled = true;
 
     while (counter < NUMBER_OF_BULBS) {
         const newEl = document.createElement('div');
@@ -22,7 +24,6 @@ document.getElementById('start-btn').addEventListener('click', () => {
         bulbs[counter] = false;
         counter++;
     }
-
 
 
     counter = 0;
