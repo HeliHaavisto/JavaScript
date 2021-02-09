@@ -10,7 +10,15 @@ document.getElementById('start-btn').addEventListener('click', () => {
             counter++;
         }
 
-        document.getElementById(`wheel-${i}`).className = `wheel result-${drawnNumber}`;
+        document.getElementById(`wheel-${i}`).className = `wheel result-x`;
+
+
+        setTimeout(function () {
+
+            document.getElementById(`wheel-${i}`).className = `wheel result-${drawnNumber}`;
+
+        }, 1000)
+
     }
 
     if (counter == 5) {
