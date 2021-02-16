@@ -1,0 +1,32 @@
+body {
+  background-color: khaki;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(203, 206, 62);
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+div {
+  margin: 1rem;
+}
+button {
+  margin: 1rem;
+  background-color: darkolivegreen;
+  color: white;
+  border-radius: 5px;
+}
+p {
+  margin: 1 rem;
+}
