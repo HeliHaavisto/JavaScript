@@ -1,6 +1,11 @@
-body {
-  background-color: khaki;
+* {
   font-family: sans-serif;
+}
+
+body {
+  background: url("https://source.unsplash.com/1600x900/?clock") no-repeat fixed
+    center center/cover;
+  /* background-color: khaki; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -16,6 +21,7 @@ h1 {
   background-color: rgb(203, 206, 62);
   margin: 0 auto;
   border-radius: 10px;
+  padding: 1rem;
 }
 
 div {

@@ -12,12 +12,12 @@
     <h1>How much time until...</h1>
     <section id="container">
         <div>
-        <label for="date">Date until event occurs</label><br>
-        <input type=date id="date"><br>
-        </div>
-        <div>
         <label for="dateStart">Start counting from</label><br>
         <input type=date id="dateStart"><br>
+        </div>
+        <div>
+        <label for="date">Date until event occurs</label><br>
+        <input type=date id="date"><br>
         </div>
         <div>
         <label for="name">Event name</label><br>
@@ -26,7 +26,11 @@
         
         <div id="event"></div>
         <button id="button">Submit</button>
-        <p></p>
+        <button id="reset">Reset</button>
+        <p></p><br>
+        <h3>
+        <p id="counter"></p>
+        </h3>
     </section>
     <script src="script.js"></script>
 </body>
