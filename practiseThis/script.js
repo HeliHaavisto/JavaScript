@@ -90,4 +90,38 @@ function getOldest(users) {
 
 }
 
-getOldest();
+getOldest(users);
+
+
+
+function sortArray(users) {
+
+    for (let x = 0; x < users.length; x++) {
+
+        for (let i = 0; i < (users.length - 1); i++) {
+            let student = users[i];
+            let student2 = users[i + 1];
+            if (student.age < student2.age) {
+
+                let temp = student2;
+                users[i + 1] = users[i];
+                users[i] = temp;
+            }
+        }
+
+    }
+    return users;
+
+}
+sortArray(users);
+console.log(users);
+
+document.getElementById("sort").addEventListener("click", function () {
+    let table = document.getElementById("dataTable").getElementsByTagName("tbody")[0];
+    table.innerHTML = "";
+    users.forEach(user => {
+        var { studentNo, name, age } = user;
+        addUser(studentNo, name, age);
+
+    });
+});
