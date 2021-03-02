@@ -1,5 +1,5 @@
 let userDate = 0;
-
+let x;
 
 
 document.getElementById('button').addEventListener('click', () => {
@@ -32,8 +32,12 @@ document.getElementById('button').addEventListener('click', () => {
     text.textContent = ("There are " + Math.floor(differenceInDays) + " days left and " + getNumWorkDays(startDate, endDate) + " workdays left until " + tapahtuma);
 
     // countdown starts here ->
+    if (x) {
+        clearInterval(x)
+    }
+
     let countDownDate = endDate.getTime();
-    let x = setInterval(function () {
+    x = setInterval(function () {
 
         let now = new Date().getTime();
         let distance = countDownDate - now;
@@ -57,10 +61,7 @@ document.getElementById('button').addEventListener('click', () => {
 
 
 });
-document.getElementById('reset').addEventListener('click', () => {
 
-    location.reload();
-});
 
 
 
