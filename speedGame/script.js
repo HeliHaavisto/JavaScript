@@ -1,5 +1,6 @@
 let scoredisplay = document.querySelector("#score");
 let overlay = document.getElementById("infobox");
+let buttons = document.querySelectorAll(".buttons");
 
 let close = document.getElementById("close");
 
@@ -30,7 +31,48 @@ let position = Math.floor(Math.random() * 5);
 
 const startGame = () => {
 
-}
+    let nextActive = pickNew(active);
+
+    buttons[nextActive].classList.toggle("active");
+    buttons[active].classList.remove("active");
+
+    active = nextActive;
+
+    timer = setTimeout(startGame, 1000);
+
+    // if (clicked(i) !== position) {
+    //     endGame();
+    // }
+
+    function pickNew(active) {
+        let nextActive = position;
+        // if (nextActive != active) {
+        //     return nextActive;
+        // } else {
+        //     return pickNew(active);
+        // }
+
+    }
+
+};
+
+document.getElementById("start").addEventListener("click", startGame);
+
+
+
+const endGame = () => {
+    clearTimeout(timer);
+    overlay.style.visibility = "visible";
+    overlay.textContent = "Your score is " + score;
+};
+
+document.getElementById("stop").addEventListener("click", endGame);
+
+const reloadGame = () => {
+    window.location.reload();
+};
+
+close.addEventListener("click", reloadGame);
 
 
 
