@@ -16,6 +16,7 @@
         let onePokemon = [];
         var row = table.insertRow();
         var pokemonName = row.insertCell(0);
+        var pokemonPicture = row.insertCell(1);
 
         fetch(pokemon.url)
             .then(resp => resp.json())
@@ -24,7 +25,18 @@
                 onePokemon = json;
                 // console.log(onePokemon);
 
-                pokemonName.innerHTML = "<a href=" + onePokemon.sprites.front_default + " >" + pokemon.name + "</a>";
+                pokemonName.innerHTML = '<a href="#pokemonImage' + pokemon.name + '"  >' + pokemon.name + "</a>";
+
+                pokemonPicture.innerHTML = '<img src="' + onePokemon.sprites.front_default + '" alt="pokemon" id="pokemonImage' + pokemon.name + '"></img>';
+
+                // let showPokemon = () => {
+                //     document.getElementById("hidden").innerHTML = '<img src="' + onePokemon.sprites.front_default + '" alt="pokemon" id="pokemonImage' + pokemon.name + '"></img>';
+                //     document.getElementById("hidden").style.visibililty = "visible";
+                // };
+
+                // table.addEventListener("click", showPokemon);
+
+
             })
 
 
