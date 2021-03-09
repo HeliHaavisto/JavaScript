@@ -17,13 +17,13 @@
       <h1>Speedgame</h1>
       <div class="gamearea">
         <h2 id="score"></h2>
-        <div class="circle" class="one"></div>
+        <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
         <div class="circle"></div>
       </div>
-      <button type="button" onclick="startGame()">Start game</button>
-      <button type="button" onclick="endGame()">Stop game</button>
+      <button type="button" id="start" onclick="startGame()">Start game</button>
+      <button type="button" id="stop" onclick="endGame()">Stop game</button>
     </section>
     <section id="result">
       <div class="gameoverbox">
@@ -32,6 +32,10 @@
         <button type="button" id="close">Close</button>
       </div>
     </section>
+    <footer>
+      <p>Cat image by Font Awesome <a href="https://fontawesome.com/license">Font Awesome license</a>
+         </p>
+    </footer>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

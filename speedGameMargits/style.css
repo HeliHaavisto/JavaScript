@@ -34,10 +34,15 @@ h1 {
   border-radius: 50%;
   display: inline-block;
   margin: 20px 20px;
+  pointer-events: none;
 }
 
 .circle.active {
-  background-color: blue;
+  background-image: url("cat-solid.svg");
+}
+
+.circle :first-child.active {
+  background-color: red;
 }
 
 .circle:active {
@@ -52,6 +57,10 @@ button {
   border-radius: 5px;
   border: none;
   margin: 20px;
+}
+
+#stop {
+  visibility: hidden;
 }
 
 #result {
