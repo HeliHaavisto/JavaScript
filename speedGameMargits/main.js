@@ -62,6 +62,9 @@ const startGame = () => {
         } else {
             score++;
             scoredisplay.textContent = `Your score is ${score}`;
+            buttons.forEach(el => {
+                el.style.pointerEvents = "none";
+            });
             clearTimeout(checker);
         }
     };

@@ -41,7 +41,7 @@ h1 {
   background-image: url("cat-solid.svg");
 }
 
-.circle :first-child.active {
+.circle:first-child .circle.active {
   background-color: red;
 }
 
