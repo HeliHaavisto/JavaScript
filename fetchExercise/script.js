@@ -25,8 +25,8 @@
                 onePokemon = json;
                 // console.log(onePokemon);
 
-                pokemonName.innerHTML = '<a href="#pokemonImage' + pokemon.name + '"  >' + pokemon.name + "</a>";
 
+                pokemonName.innerHTML = '<a href="#pokemonImage"  >' + pokemon.name + "</a>";
                 pokemonPicture.innerHTML = '<img src="' + onePokemon.sprites.front_default + '" alt="pokemon" id="pokemonImage' + pokemon.name + '"></img>';
 
                 // let showPokemon = () => {
