@@ -26,15 +26,15 @@
                 // console.log(onePokemon);
 
 
-                pokemonName.innerHTML = '<a href="#pokemonImage"  >' + pokemon.name + "</a>";
-                pokemonPicture.innerHTML = '<img src="' + onePokemon.sprites.front_default + '" alt="pokemon" id="pokemonImage' + pokemon.name + '"></img>';
+                pokemonName.innerHTML = `<a href="#pokemonImage${pokemon.name}"> ${pokemon.name}</a>`;
 
-                // let showPokemon = () => {
-                //     document.getElementById("hidden").innerHTML = '<img src="' + onePokemon.sprites.front_default + '" alt="pokemon" id="pokemonImage' + pokemon.name + '"></img>';
-                //     document.getElementById("hidden").style.visibililty = "visible";
-                // };
 
-                // table.addEventListener("click", showPokemon);
+                let showPokemon = () => {
+                    pokemonPicture.innerHTML = '<img src="' + onePokemon.sprites.front_default + '" alt="pokemon" id="pokemonImage' + pokemon.name + '"></img>';
+                    // document.getElementById("hidden").setAttribute('src', onePokemon.sprites.front_default);
+                };
+
+                table.addEventListener("click", showPokemon);
 
 
             })
