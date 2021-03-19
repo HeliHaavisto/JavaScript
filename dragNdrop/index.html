@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drag and drop</title>
+  </head>
+
+  <body>
+    <h1>Drag and drop</h1>
+    <h2>Train your Finnish</h2>
+    <div class="container">
+      <div class="box">
+        <img
+          id="kissa"
+          src="cat-solid.svg"
+          alt="cat"
+          draggable="true"
+          ondragstart="drag(event)"
+          width="50"
+          height="50"
+        />
+      </div>
+      <div
+        id="kissadropbox"
+        class="box2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        kissa
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img
+          id="koira"
+          src="dog-solid.svg"
+          alt="cat"
+          draggable="true"
+          ondragstart="drag(event)"
+          width="50"
+          height="50"
+        />
+      </div>
+      <div
+        id="koiradropbox"
+        class="box2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        koira
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <img
+          id="hevonen"
+          src="horse-solid.svg"
+          alt="cat"
+          draggable="true"
+          ondragstart="drag(event)"
+          width="50"
+          height="50"
+        />
+      </div>
+      <div
+        id="horsedropbox"
+        class="box2"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+      >
+        hevonen
+      </div>
+    </div>
+    <p>Fonts by Font Awesome</p>
+    <script src="script.js"></script>
+  </body>
+</html>
